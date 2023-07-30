@@ -1,3 +1,3 @@
 <template>
-    <div>我的菜单</div>
+    <div id="me">我的菜单</div>
 </template>
