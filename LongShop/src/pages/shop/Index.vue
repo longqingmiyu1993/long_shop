@@ -1,8 +1,8 @@
 <template>
    <div id="index">
        <div id="index_swipe">
-            <van-swipe :autoplay="3000" lazy-render>
-                <van-swipe-item v-for="image in images" :key="image">
+            <van-swipe :autoplay="3000" lazy-render id="van_swipe">
+                <van-swipe-item v-for="image in images" :key="image" id="van_swipe_item">
                     <img :src="image" />
                 </van-swipe-item>    
             </van-swipe>
@@ -34,8 +34,12 @@ export default {
 <style rel="stylesheet/scss" lang="less" scoped>
 #index {
     #index_swipe {
-        height:20%;
-        width:100%;
+       #van_swipe{
+            #van_swipe_item{
+                height: 100px;
+                width:100%;
+            }
+       }
     }
 }
 </style>
